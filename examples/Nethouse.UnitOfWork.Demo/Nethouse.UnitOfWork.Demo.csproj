@@ -56,13 +56,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nethouse.UnitOfWork\Nethouse.UnitOfWork.BookDomain\Nethouse.UnitOfWork.BookDomain.csproj">
+    <ProjectReference Include="..\..\src\Nethouse.UnitOfWork.csproj">
+      <Project>{7995c515-fc63-4927-9c8a-ca1e5f18b3b9}</Project>
+      <Name>Nethouse.UnitOfWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nethouse.UnitOfWork.BookDomain\Nethouse.UnitOfWork.BookDomain.csproj">
       <Project>{037ef03c-62b3-4906-bd7f-9739bbb49f39}</Project>
       <Name>Nethouse.UnitOfWork.BookDomain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nethouse.UnitOfWork\Nethouse.UnitOfWork.csproj">
-      <Project>{a84fb9f8-d4c1-420d-87f3-6534dcfafbe9}</Project>
-      <Name>Nethouse.UnitOfWork</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -28,7 +28,8 @@ namespace Nethouse.UnitOfWork.Demo
                     PageCout = 1235,
                     Description = "Foo Bar Baz",
                 };
-                bookRepo.Add(smallBook);
+                bookRepo.Add(bigBook);
+                uow.SaveChanges();
 
                 //fetch entities using the repository:
                 var booksWith600Pages = bookRepo.GetBooksWithMinimumPageCount(600);

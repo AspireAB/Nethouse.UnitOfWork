@@ -16,7 +16,7 @@ namespace Nethouse.UnitOfWork.BookDomain
         {
         }
 
-        public IEnumerable<Book> GetBooksWithMinimumPageCount(int minimumPageCount)
+        public IReadOnlyCollection<Book> GetBooksWithMinimumPageCount(int minimumPageCount)
         {
             return Items.Where(book => book.PageCout >= minimumPageCount).ToList().AsReadOnly();
         }
